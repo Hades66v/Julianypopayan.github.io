@@ -1,0 +1,46 @@
+html>
+ </html>
+<dialog>
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+</dialog>
+
+<dialog open>
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p><
+</dialog>
+<button>Abrir ventana modal</button>
+
+<dialog id="modal">
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+   <button>Cerrar</button>
+</dialog>
+
+<button onclick="window.modal.showModal();">Abrir ventana modal</button>
+
+<dialog id="modal">
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+   <button onclick="window.modal.close();">Cerrar</button>
+</dialog>
+
+<button onclick="window.modal1.showModal();">Abrir ventana modal</button>
+
+<dialog id="modal1">
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+   <button onclick="window.modal1.close();">Cerrar</button>
+</dialog>
+
+<button onclick="window.modal2.showModal();">Abrir ventana modal</button>
+
+<dialog id="modal1">
+   <h2>Este es el título de mi ventana modal</h2>
+   <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+   <button onclick="window.modal2.close();">Cerrar</button>
+</dialog>
+
+dialog::backdrop {
+  background: rgba(234, 206, 227, 0.9);
+}
